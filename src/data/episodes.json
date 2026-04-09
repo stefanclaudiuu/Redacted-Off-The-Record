@@ -1,0 +1,143 @@
+[
+  {
+    "id": "dosar-001",
+    "case_name": "DOSAR #001: ZBORUL DISPĂRUT",
+    "description": "Zborul XR-4057 a dispărut de pe radar la 22:14. Un singur supraviețuitor. Un telefon blocat. Patru versiuni ale adevărului.",
+    "status": "locked",
+    "unlock_code": "ZBOR001",
+    "progress": 0,
+    "sections": ["interogatoriu", "telefon", "radar", "probe"],
+    "phone": {
+      "pin": "2018",
+      "owner": "Andrei Șerban",
+      "model": "Nokia 6310i",
+      "sms": [
+        { "id": "sms-e", "from": "E.", "time": "21:47", "text": "Andrei, am aranjat totul pentru decolare. Nu-ți face griji, containerul 7B e pe manifest. Elena." },
+        { "from": "Sofia", "time": "21:30", "text": "Eu și Mara te așteptăm acasă. Ai grijă de tine. ❤️" },
+        { "from": "Nr. Necunoscut", "time": "20:15", "text": "Verifică manifestul de marfă. Containerul 7B nu e declarat." },
+        { "from": "0742███891", "time": "19:50", "text": "Ai primit pachetul? Confirmă pe numărul vechi." }
+      ],
+      "contacts": [
+        { "id": "sofia-serban", "name": "Sofia ❤️", "number": "0731██████" },
+        { "id": "mara-serban", "name": "Mara 🎂", "number": "0723██████", "note": "Ziua ei: 23" },
+        { "id": "mihai-costin-c", "name": "Mihai Costin", "number": "0742███891" },
+        { "id": "nr-privat", "name": "Nr. Privat", "number": "Ascuns" }
+      ],
+      "calls": [
+        { "type": "missed", "from": "Nr. Anonim", "time": "22:12", "duration": null, "highlight": true },
+        { "type": "missed", "from": "0742███891", "time": "22:11", "duration": null },
+        { "type": "incoming", "from": "Sofia ❤️", "time": "19:45", "duration": "2:34" },
+        { "type": "outgoing", "to": "Mihai Costin", "time": "18:20", "duration": "5:12" },
+        { "type": "missed", "from": "Nr. Privat", "time": "17:00", "duration": null }
+      ],
+      "notes": [
+        { "title": "URGENT", "time": "21:55", "text": "Pilotul nu e cine zice că e." },
+        { "title": "Verificare", "time": "20:00", "text": "Cală: container 7B — greutate declarată nu corespunde. +200kg." },
+        { "id": "nota-criptata", "title": "🔒 NOTĂ CRIPTATĂ", "time": "19:30", "encrypted": true, "password": "MARA23", "text": "Mihai mi-a spus că totul e în regulă cu marfa. Dar cifrele nu se potrivesc. 340 kg pe manifest, dar am văzut cum se chinuiau 4 oameni să-l urce. Nu are sens. Mihai nu mi-ar minți... sau?\n\nCineva l-a pus să semneze. Trebuie să aflu CINE. Dacă citești asta, înseamnă că nu mai sunt. Caută actele." }
+      ]
+    },
+    "suspect_unlock_chain": {
+      "initial": ["mihai-costin"],
+      "elena-stewardesa": { "trigger": "phone_sms_e_read", "label": "S-A STABILIT O CONEXIUNE NOUĂ: ELENA VARGA" },
+      "victor-dragos-pilot": { "trigger": "mihai_confession", "label": "MIHAI A DEZVĂLUIT NUMELE: VICTOR DRAGOȘ — CONEXIUNE STABILITĂ" }
+    },
+    "suspects": [
+      {
+        "id": "mihai-costin",
+        "name": "Mihai Costin",
+        "role": "Prieten al Victimei",
+        "avatar_letter": "M",
+        "status_label": "Martor — Cooperant",
+        "initial_message": "Andrei era cel mai bun prieten al meu din copilărie. Dacă pot ajuta cu ceva... orice... vă rog. Trebuie să aflăm ce s-a întâmplat cu el pe zborul ăla."
+      },
+      {
+        "id": "elena-stewardesa",
+        "name": "Elena Varga",
+        "role": "Stewardesă — Zbor XR-4057",
+        "avatar_letter": "E",
+        "status_label": "Martor — Speriată",
+        "locked": true,
+        "initial_message": "Cum ai aflat de mine?! Cine... cine ți-a dat numărul meu? Dacă ești de la companie, nu am nimic de spus. Dacă nu... poate avem despre ce vorbi."
+      },
+      {
+        "id": "victor-dragos-pilot",
+        "name": "Victor Dragoș",
+        "role": "Inspector USZ — Suspendat",
+        "avatar_letter": "V",
+        "status_label": "Suspect — Evaziv",
+        "locked": true,
+        "initial_message": "Deci ai ajuns și la mine. Felicitări. Dar înainte să mă acuzi de ceva, ar trebui să te întrebi: cine a plătit-o pe stewardesă să tacă?"
+      }
+    ]
+  },
+  {
+    "id": "dosar-002",
+    "case_name": "DOSAR #002: CONTAINERELE",
+    "description": "O tranzacție suspectă în portul industrial. Trei suspecți, trei versiuni ale poveștii. Doar unul spune adevărul — sau poate niciunul.",
+    "status": "locked",
+    "unlock_code": "CONTAINER02",
+    "progress": 0,
+    "suspects": [
+      {
+        "id": "victor-dragos",
+        "name": "Victor Dragoș",
+        "role": "Suspect Principal",
+        "avatar_letter": "V",
+        "status_label": "Interogatoriu activ",
+        "initial_message": "Nu ai mult timp. Ascultă-mă cu atenție... Am lăsat dovezi în trei locații diferite. Dacă ai ajuns aici, înseamnă că cineva vrea să afle adevărul."
+      },
+      {
+        "id": "elena-varga",
+        "name": "Elena Varga",
+        "role": "Martor — Chelneriță",
+        "avatar_letter": "E",
+        "status_label": "Martor cooperant",
+        "initial_message": "Bună... nu știu cine ești, dar dacă ești de la autorități, am ceva de spus. Am văzut ceva la port în noaptea aia. Ceva ce nu trebuia să văd."
+      },
+      {
+        "id": "mihai-corbu",
+        "name": "Mihai 'Corbu'",
+        "role": "Intermediar Port",
+        "avatar_letter": "C",
+        "status_label": "Suspect secundar",
+        "initial_message": "Cine dracu' ești tu? Dacă te-a trimis cineva de la port, spune-i că nu știu nimic. Și dacă nu te-a trimis nimeni... atunci ai o problemă și mai mare."
+      }
+    ]
+  },
+  {
+    "id": "dosar-003",
+    "case_name": "DOSAR #003: ARHIVA",
+    "description": "Documente clasificate au dispărut din arhiva municipală. O jurnalistă, un oficial, și un hacker — toți conectați.",
+    "status": "locked",
+    "unlock_code": "ARHIVA03",
+    "progress": 0,
+    "suspects": [
+      {
+        "id": "elena-varga-j",
+        "name": "Elena Varga",
+        "role": "Jurnalistă de investigații",
+        "avatar_letter": "E",
+        "status_label": "Informator ascuns",
+        "initial_message": "Dacă citești asta, înseamnă că ai găsit dosarul. Nu am dispărut — m-am ascuns. Dar am nevoie de ajutorul tău ca să termin ce am început."
+      }
+    ]
+  },
+  {
+    "id": "dosar-004",
+    "case_name": "DOSAR #004: NEXUS",
+    "description": "O corporație tech cu secrete periculoase. Un fost angajat a trimis un mesaj criptat înainte de a dispărea.",
+    "status": "locked",
+    "unlock_code": "NEXUS04",
+    "progress": 0,
+    "suspects": [
+      {
+        "id": "mihail-rusu",
+        "name": "Mihail Rusu",
+        "role": "Fost programator Nexus Digital",
+        "avatar_letter": "M",
+        "status_label": "Informator instabil",
+        "initial_message": "Am criptat totul. Dar ți-am lăsat indicii. Fiecare răspuns corect te duce mai aproape de server-ul principal. Ai grijă — sunt monitorizat."
+      }
+    ]
+  }
+]

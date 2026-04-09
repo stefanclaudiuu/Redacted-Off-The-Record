@@ -1,0 +1,283 @@
+{
+  "dosar-001": [
+    {
+      "id": "ZB-001",
+      "name": "Profil Andrei Șerban",
+      "type": "document",
+      "icon": "file-text",
+      "suspect": "mihai-costin",
+      "description": "Profilul lui Andrei Șerban: fost pilot militar, 30 ani experiență. Comportament ciudat raportat în ultimele zile înainte de zbor.",
+      "visual": {
+        "label": "PROFIL_SERBAN_A.pdf",
+        "lines": ["PROFIL PERSONAL — CLASIFICAT", "ȘERBAN, Andrei M. — Fost pilot militar", "Experiență: 30 ani | Ore zbor: 18,400", "Record disciplinar: IMPECABIL", "Notă: Comportament atipic raportat 01-04.05", "Status: DECEDAT — Zbor XR-4057"]
+      }
+    },
+    {
+      "id": "ZB-002",
+      "name": "Raport Container 7B",
+      "type": "document",
+      "icon": "alert-triangle",
+      "suspect": "elena-stewardesa",
+      "description": "Raport privind încărcarea neautorizată a containerului 7B. Greutate reală depășește declarația cu peste 200kg.",
+      "visual": {
+        "label": "RAPORT_CONTAINER_7B.pdf",
+        "lines": ["RAPORT INCIDENT — CONFIDENȚIAL", "Container: 7B | Zbor: XR-4057", "Greutate declarată: 340 kg", "Greutate estimată: 540+ kg ⚠", "Încărcare: Platformă separată, 2 persoane", "Observator: Personal cabină (anonim)"]
+      }
+    },
+    {
+      "id": "ZB-005",
+      "name": "Raport Verificare Oficială",
+      "type": "document",
+      "icon": "file-text",
+      "suspect": "victor-dragos-pilot",
+      "description": "Documentul de verificare USZ al containerului 7B, semnat de inspectorul Dragoș. Discrepanță majoră între greutatea declarată și cea reală.",
+      "visual": {
+        "label": "VERIFICARE_USZ_DRAGOS_7B.pdf",
+        "lines": ["INSPECȚIE MARFĂ USZ — APROBAT", "Inspector: DRAGOȘ, Victor A. — Unitatea de Supraveghere Zbor", "Container: 7B | Status: APROBAT ✓", "Sistem verificare: Protocol Icarus v3.1", "Greutate declarată: 340 kg | Măsurată: ████ ⚠", "Semnătură: V. Dragoș ████████"]
+      }
+    },
+    {
+      "id": "ZB-006",
+      "name": "Bilet Îmbarcare",
+      "type": "document",
+      "icon": "file-text",
+      "suspect": "mihai-costin",
+      "description": "Biletul de îmbarcare al lui Andrei Șerban, recuperat din epavă. SEAT: 23. Pete de sânge pe colțul din dreapta.",
+      "visual": {
+        "label": "BOARDING_PASS_AS.jpg",
+        "lines": ["═══════ BOARDING PASS ═══════", "ȘERBAN / ANDREI", "ZBOR: XR-4057 | DATA: 04.05.2024", "POARTĂ: 7 | SEAT: 23", "", "⚠ Pete de sânge — Colț dreapta"]
+      }
+    },
+    {
+      "id": "ZB-007",
+      "name": "Lista Pasageri",
+      "type": "document",
+      "icon": "database",
+      "suspect": "elena-stewardesa",
+      "description": "Lista completă a celor 145 de persoane de la bordul zborului XR-4057. Un singur supraviețuitor: copilotul Radu Ionescu.",
+      "visual": {
+        "label": "MANIFEST_PASAGERI_XR4057.xlsx",
+        "lines": ["MANIFEST PASAGERI — ZBOR XR-4057", "Total persoane: 145 (138 pasageri + 7 echipaj)", "Supraviețuitori: 1 (IONESCU, Radu — Copilot)", "Decedați confirmați: 127", "Dispăruți: 17", "⚠ CLASIFICAT — Investigație în curs"]
+      }
+    },
+    {
+      "id": "ZB-008",
+      "name": "Fotografie Medalie",
+      "type": "image",
+      "icon": "camera",
+      "suspect": "mihai-costin",
+      "description": "Medalia de onoare a lui Andrei Șerban, confiscată din efectele personale. Gravură vizibilă: 'CAMPIONATUL DE AVIAȚIE - 1995'.",
+      "visual": {
+        "label": "FOTO_MEDALIE_AS.jpg",
+        "scene": ["MEDALIE DE ONOARE — Efecte personale", "Gravură: CAMPIONATUL DE AVIAȚIE", "An gravat: 1995", "Material: Bronz patinat, panglică tricoloră", "Notă: Purtată constant în portofel"]
+      }
+    },
+    {
+      "id": "ZB-009",
+      "name": "Cameră Supraveghere",
+      "type": "image",
+      "icon": "camera",
+      "suspect": "victor-dragos-pilot",
+      "description": "Captură de pe camerele de supraveghere de la poarta de marfă. Două siluete lângă containerul 7B, una identificată ca personal de cabină.",
+      "visual": {
+        "label": "CCTV_POARTA_MARFA_2047.jpg",
+        "scene": ["CCTV — POARTĂ MARFĂ, 04.05.2024", "Timestamp: 20:47:12", "2 persoane lângă container 7B", "Persoana 1: Uniformă personal cabină", "Persoana 2: Neidentificată, geacă neagră"]
+      }
+    },
+    {
+      "id": "ZB-011",
+      "name": "Nota Criptată a lui Andrei",
+      "type": "document",
+      "icon": "key-round",
+      "suspect": "mihai-costin",
+      "description": "O notă criptată găsită în telefonul lui Andrei, protejată cu parola MARA23. Andrei își exprimă îndoielile față de ce i-a spus Mihai despre greutatea mărfii.",
+      "visual": {
+        "label": "NOTA_CRIPTATA_AS.enc",
+        "lines": [
+          "NOTĂ PERSONALĂ — DECRIPTAT",
+          "Parola: ████ (MARA23)",
+          "",
+          "Mihai mi-a spus că totul e în regulă cu",
+          "marfa. Dar cifrele nu se potrivesc.",
+          "340 kg pe manifest, dar am văzut cum",
+          "se chinuiau 4 oameni să-l urce. Nu are",
+          "sens. Mihai nu mi-ar minți... sau?",
+          "",
+          "Cineva l-a pus să semneze. Trebuie să",
+          "aflu CINE. Dacă citești asta, înseamnă",
+          "că nu mai sunt. Caută actele."
+        ]
+      }
+    },
+    {
+      "id": "ZB-010",
+      "name": "Cutia Neagră — Fragment Audio",
+      "type": "audio",
+      "icon": "headphones",
+      "suspect": "victor-dragos-pilot",
+      "description": "Fragment audio recuperat din cutia neagră a zborului XR-4057. Ultimele 47 de secunde înainte de impact. Voci neidentificate în cockpit.",
+      "visual": {
+        "label": "FDR_XR4057_FINAL_47s.wav",
+        "transcript": [
+          "[22:13:41] COPILOT: Căpitane, altitudinea scade!",
+          "[22:13:44] ???: Nu atinge nimic. Lasă-l să cadă.",
+          "[22:13:47] CĂPITAN: Cine dracu' e în cockpit?! SECURITATE!",
+          "[22:13:51] ???: Andrei... trebuia să asculți.",
+          "[22:13:55] [IMPACT — SEMNAL PIERDUT]",
+          "",
+          "⚠ VOCEA NEIDENTIFICATĂ CORESPUNDE PARȚIAL CU: COSTIN, M."
+        ]
+      }
+    }
+  ],
+  "dosar-002": [
+    {
+      "id": "VD-001",
+      "name": "Foto Port #001",
+      "type": "image",
+      "icon": "camera",
+      "suspect": "victor-dragos",
+      "description": "O fotografie neclară cu o tranzacție de bani lângă containerul roșu din portul industrial. Se observă două siluete, una în uniformă.",
+      "visual": {
+        "label": "IMG_20241203_0214.raw",
+        "scene": ["CONTAINER ROȘU — ZONA INDUSTRIALĂ PORT", "2 siluete • 1 uniformă • plic alb vizibil", "Timestamp: 03.12.2024, 02:14:37", "ISO 6400 • Expunere: 1/15s"]
+      }
+    },
+    {
+      "id": "VD-002",
+      "name": "Casetă Audio #012",
+      "type": "audio",
+      "icon": "headphones",
+      "suspect": "victor-dragos",
+      "description": "O înregistrare de 47 de secunde captată în depozitul abandonat. Se aud voci distorsionate discutând despre 'transferul de marți'.",
+      "visual": {
+        "label": "REC_DEPOT_047s.wav",
+        "transcript": ["[00:03] ...trebuie să fie gata marți...", "[00:12] ...containerul e deja acolo...", "[00:28] ...banii vin de la [REDACTED]...", "[00:41] ...nu mă suna pe fix, [SEMNAL PIERDUT]"]
+      }
+    },
+    {
+      "id": "VD-003",
+      "name": "Document Clasificat",
+      "type": "document",
+      "icon": "file-text",
+      "suspect": "victor-dragos",
+      "description": "Un raport intern al Biroului de Investigații Speciale (BIS), parțial redactat, care menționează o operațiune secretă numită 'Umbra Roșie'.",
+      "visual": {
+        "label": "RAPORT_BIS_CLASIFICAT.pdf",
+        "lines": ["BIROUL DE INVESTIGAȚII SPECIALE — STRICT SECRET", "Operațiunea ████████ (cod: UMBRA ROȘIE)", "Ref: ██/██/2024 — Divizia Crimă Organizată", "...suspect principal: DRAGOȘ, Victor I.", "...conexiuni confirmate cu rețeaua din ████"]
+      }
+    },
+    {
+      "id": "VD-004",
+      "name": "Bilet de Amenințare",
+      "type": "document",
+      "icon": "alert-triangle",
+      "suspect": "victor-dragos",
+      "description": "Un bilet scris de mână: 'Oprește-te acum sau nu te mai oprești niciodată.' Fără semnătură.",
+      "visual": {
+        "label": "BILET_AMENINTARE_SCAN.jpg",
+        "lines": ["« Oprește-te acum", "  sau nu te mai oprești", "  niciodată. »", "", "— fără semnătură —"]
+      }
+    },
+    {
+      "id": "EV-001",
+      "name": "Declarație Martor",
+      "type": "document",
+      "icon": "file-text",
+      "suspect": "elena-varga",
+      "description": "Declarația Elenei despre ce a văzut la port: doi bărbați au scos ceva greu din containerul roșu la ora 2 noaptea.",
+      "visual": {
+        "label": "DECLARATIE_VARGA_E.doc",
+        "lines": ["DECLARAȚIE — Martor: Elena VARGA", "Data: 05.12.2024, ora 09:30", "\"Am văzut doi bărbați la containerul roșu.\"", "\"Unul purta uniformă. Ceva greu în mâini.\"", "\"Era în jur de ora 2 noaptea.\""]
+      }
+    },
+    {
+      "id": "MC-001",
+      "name": "Avertisment Corbu",
+      "type": "audio",
+      "icon": "headphones",
+      "suspect": "mihai-corbu",
+      "description": "Amenințarea lui Corbu: 'Portul e locul unde dispar oamenii.'",
+      "visual": {
+        "label": "REC_INTEROGARE_MC.wav",
+        "transcript": ["[00:01] [DETECTIV]: Spune-mi despre port.", "[00:04] [CORBU]: *râde* Portul?", "[00:08] [CORBU]: Portul e locul unde", "         dispar oamenii, băiatule.", "[00:15] [CORBU]: N-ai idee în ce te bagi."]
+      }
+    }
+  ],
+  "dosar-003": [
+    {
+      "id": "EVJ-001",
+      "name": "Articol Nepublicat",
+      "type": "document",
+      "icon": "file-text",
+      "suspect": "elena-varga-j",
+      "description": "Draft-ul complet al articolului de investigație al Elenei.",
+      "visual": {
+        "label": "DRAFT_ARTICOL_v3.docx",
+        "lines": ["CORUPȚIA DIN UMBRA PUTERII", "de Elena Varga — NEPUBLICAT", "\"Oficialul ████████ a primit sume de\"", "\"la fiecare sfârșit de lună, în parking-ul\"", "\"ministerului. Surse confirmate: 3.\""]
+      }
+    },
+    {
+      "id": "EVJ-002",
+      "name": "Fotografii Sediu MTA",
+      "type": "image",
+      "icon": "camera",
+      "suspect": "elena-varga-j",
+      "description": "Set de 4 fotografii realizate din parcare, arătând un oficial primind o geantă.",
+      "visual": {
+        "label": "FOTO_MTA_SET.zip",
+        "scene": ["4 FOTOGRAFII — PARCARE SEDIU MTA", "Oficial primește geantă neagră", "Persoană neidentificată, față acoperită", "Timestamp: 28.11.2024, 18:42–18:45"]
+      }
+    },
+    {
+      "id": "EVJ-003",
+      "name": "Email Criptat",
+      "type": "document",
+      "icon": "mail",
+      "suspect": "elena-varga-j",
+      "description": "Un email trimis de sursa anonimă: 'Arhiva e în subsol. Grăbește-te.'",
+      "visual": {
+        "label": "EMAIL_ENCRYPTED.eml",
+        "lines": ["De la: <anonim@protonmail.ch>", "Către: elena.varga@██████.ro", "Subiect: [fără subiect]", "GPS: 46.████, 23.████", "\"Arhiva e în subsol. Grăbește-te.\""]
+      }
+    }
+  ],
+  "dosar-004": [
+    {
+      "id": "MR-001",
+      "name": "Fragment Cod Sursă",
+      "type": "code",
+      "icon": "code",
+      "suspect": "mihail-rusu",
+      "description": "Un fragment din algoritmul de supraveghere al Nexus Digital.",
+      "visual": {
+        "label": "nexus_intercept.py",
+        "code": ["def intercept_comm(target_id):", "    stream = open_channel(target_id)", "    while stream.active:", "        pkt = stream.capture()", "        if pkt.encrypted:", "            data = decrypt_aes(pkt.payload)", "        db.store(target_id, data)"]
+      }
+    },
+    {
+      "id": "MR-002",
+      "name": "Certificat Digital",
+      "type": "document",
+      "icon": "key-round",
+      "suspect": "mihail-rusu",
+      "description": "Certificatul SSL pentru server-ul principal Nexus. Expiră în 48 de ore.",
+      "visual": {
+        "label": "nexus_cert.pem",
+        "lines": ["-----BEGIN CERTIFICATE-----", "MIIBkTCB+wIJANp████████████MA0G", "CSqGSIb3DQEBCwUA████████████████", "...████████████████████████████...", "-----END CERTIFICATE-----", "Expiră: 07.12.2024 23:59:59 UTC"]
+      }
+    },
+    {
+      "id": "MR-003",
+      "name": "Log Supraveghere",
+      "type": "data",
+      "icon": "database",
+      "suspect": "mihail-rusu",
+      "description": "14.000 de cetățeni monitorizați fără mandat legal.",
+      "visual": {
+        "label": "surveillance_log.csv",
+        "lines": ["[2024-12-01] TARGETS: 14,237 | WARRANTS: 0", "[2024-12-02] TARGETS: 14,301 | WARRANTS: 0", "[2024-12-03] TARGETS: 14,298 | WARRANTS: 0", "⚠ ALERTĂ: Niciun mandat legal emis", "⚠ GDPR VIOLATION: Art. 6, Art. 9"]
+      }
+    }
+  ]
+}

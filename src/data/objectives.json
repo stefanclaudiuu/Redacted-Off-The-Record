@@ -1,0 +1,112 @@
+{
+  "dosar-001": [
+    {
+      "id": "D1-OBJ-001",
+      "title": "Primul interogatoriu",
+      "description": "Vorbește cu Mihai Costin, prietenul lui Andrei Șerban, pentru a obține indicii.",
+      "trigger": "mihai_contacted"
+    },
+    {
+      "id": "D1-OBJ-002",
+      "title": "Indiciul PIN-ului",
+      "description": "Întreabă-l pe Mihai despre codul telefonului lui Andrei. El va menționa medalia și locul din avion.",
+      "trigger": "pin_clue_received"
+    },
+    {
+      "id": "D1-OBJ-003",
+      "title": "Deblocarea telefonului",
+      "description": "Accesează telefonul lui Andrei Șerban și introdu PIN-ul corect (medalie + loc avion).",
+      "trigger": "phone_unlocked"
+    },
+    {
+      "id": "D1-OBJ-004",
+      "title": "Mesajul Elenei",
+      "description": "Citește SMS-ul de la 'E.' pe telefonul victimei pentru a debloca un nou suspect.",
+      "trigger": "phone_sms_e_read"
+    },
+    {
+      "id": "D1-OBJ-005",
+      "title": "Nota criptată a lui Andrei",
+      "description": "Găsește nota protejată din telefonul lui Andrei. Parola este un nume drag lui.",
+      "trigger": "note_decrypted_nota-criptata"
+    },
+    {
+      "id": "D1-OBJ-006",
+      "title": "Adevărul lui Andrei",
+      "description": "Arată-i lui Mihai nota criptată. Află cine l-a pus să semneze actele — doar atunci se deblochează un nou suspect.",
+      "trigger": "mihai_confession"
+    },
+    {
+      "id": "D1-OBJ-007",
+      "title": "Confruntarea inspectorului",
+      "description": "Vorbește cu Victor Dragoș, inspectorul USZ suspendat. Află pentru cine lucrează.",
+      "trigger": "victor_contacted"
+    },
+    {
+      "id": "D1-OBJ-008",
+      "title": "Finalul dosarului",
+      "description": "Confruntă-l pe Victor și află adevărul. Ce se ascunde în Portul Constanța?",
+      "trigger": "cliffhanger_triggered"
+    }
+  ],
+  "dosar-002": [
+    {
+      "id": "D2-OBJ-001",
+      "title": "Accesarea dosarului",
+      "description": "Introdu codul CONTAINER02 pentru a debloca investigația portului.",
+      "trigger": "episode_unlocked"
+    },
+    {
+      "id": "D2-OBJ-002",
+      "title": "Recuperarea probei din port",
+      "description": "Discută cu Victor despre container sau port pentru a obține fotografia.",
+      "trigger": "evidence_VD-001"
+    },
+    {
+      "id": "D2-OBJ-003",
+      "title": "Vizualizarea probelor",
+      "description": "Deschide sertarul de Probe și vizualizează cel puțin o probă colectată.",
+      "trigger": "evidence_viewed_any"
+    }
+  ],
+  "dosar-003": [
+    {
+      "id": "D3-OBJ-001",
+      "title": "Contactarea jurnalistei",
+      "description": "Introdu codul ARHIVA03 pentru a debloca dosarul Arhivei.",
+      "trigger": "episode_unlocked"
+    },
+    {
+      "id": "D3-OBJ-002",
+      "title": "Obținerea articolului nepublicat",
+      "description": "Discută cu Elena despre articolul ei de investigație.",
+      "trigger": "evidence_EVJ-001"
+    },
+    {
+      "id": "D3-OBJ-003",
+      "title": "Accesarea fotografiilor compromitatoare",
+      "description": "Vizualizează fotografiile din sediul MTA.",
+      "trigger": "evidence_viewed_EVJ-002"
+    }
+  ],
+  "dosar-004": [
+    {
+      "id": "D4-OBJ-001",
+      "title": "Conectarea la canalul criptat",
+      "description": "Introdu codul NEXUS04 pentru a debloca dosarul Nexus.",
+      "trigger": "episode_unlocked"
+    },
+    {
+      "id": "D4-OBJ-002",
+      "title": "Extragerea codului sursă Nexus",
+      "description": "Discută cu Mihail despre Nexus Digital.",
+      "trigger": "evidence_MR-001"
+    },
+    {
+      "id": "D4-OBJ-003",
+      "title": "Obținerea certificatului de acces",
+      "description": "Vizualizează certificatul digital.",
+      "trigger": "evidence_viewed_MR-002"
+    }
+  ]
+}
